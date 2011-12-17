@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{242E77B3-4D40-4F2E-91EB-0A1D8C3880B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OdontoADM</RootNamespace>
+    <AssemblyName>OdontoADM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OrbitControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\OrbitUtils\OrbitControls\bin\Debug\OrbitControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirAtestado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirAtestado.Designer.cs">
+      <DependentUpon>ImprimirAtestado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirReceita.Designer.cs">
+      <DependentUpon>ImprimirReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOrcamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaOrcamentos.Designer.cs">
+      <DependentUpon>ListaOrcamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcarConsulta.Designer.cs">
+      <DependentUpon>MarcarConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orcamento.Designer.cs">
+      <DependentUpon>Orcamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PacienteDetalhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PacienteDetalhe.Designer.cs">
+      <DependentUpon>PacienteDetalhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servico.Designer.cs">
+      <DependentUpon>Servico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucCIDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucCIDs.Designer.cs">
+      <DependentUpon>ucCIDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucMedicamentos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucMedicamentos.Designer.cs">
+      <DependentUpon>ucMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucPacientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucPacientes.Designer.cs">
+      <DependentUpon>ucPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucSistema.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucSistema.Designer.cs">
+      <DependentUpon>ucSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucUsuarios.Designer.cs">
+      <DependentUpon>ucUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Atestado.cs" />
+    <Compile Include="Util\ImpressaoOrcamento.cs" />
+    <Compile Include="Util\Medicacao.cs" />
+    <Compile Include="Util\Receita.cs" />
+    <Compile Include="Util\Recomendacoes.cs" />
+    <Compile Include="Validadores\ValidaDocumento.cs" />
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirAtestado.resx">
+      <DependentUpon>ImprimirAtestado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirReceita.resx">
+      <DependentUpon>ImprimirReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaOrcamentos.resx">
+      <DependentUpon>ListaOrcamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcarConsulta.resx">
+      <DependentUpon>MarcarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orcamento.resx">
+      <DependentUpon>Orcamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacienteDetalhe.resx">
+      <DependentUpon>PacienteDetalhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Servico.resx">
+      <DependentUpon>Servico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucCIDs.resx">
+      <DependentUpon>ucCIDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucMedicamentos.resx">
+      <DependentUpon>ucMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucPacientes.resx">
+      <DependentUpon>ucPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucSistema.resx">
+      <DependentUpon>ucSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucUsuarios.resx">
+      <DependentUpon>ucUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OdontoADMDll\OdontoADMDll.csproj">
+      <Project>{5A881256-97EC-4807-B258-A28432AB5093}</Project>
+      <Name>OdontoADMDll</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToothChartAdult.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr_com.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
